@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Deducibilidad 150%</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="UxE-3d-positivo.png" alt="Logo" class="logo">
+        <h2>Simulador de Deducibilidad 150%</h2>
+        <form id="finance-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="income" class="input-label">Ingresos (US$):</label>
+                    <input type="text" id="income" class="input-field" required>
+                </div> 
+                <div class="form-group">
+                    <label for="taxRate" class="input-label">Tasa Impuesto a la Renta (%):</label>
+                    <input type="text" value="25" id="taxRate" class="input-field" required>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="costs" class="input-label">Costos y Gastos - Otros (US$):</label>
+                    <input type="text" id="costs" class="input-field" required>
+                </div>
+                <div class="form-group">
+                    <label for="sponsorship" class="input-label">Costos y Gastos - Patrocinio (US$):</label>
+                    <input type="text" id="sponsorship" class="input-field" required>
+                </div>
+                
+            </div>
+            <button type="button" id="calculate" disabled>Calcular</button>
+            <span class="error-message" id="form-error"></span>
+        </form>
+    </div>
+    <h4>Los resultados proporcionados son estimaciones y no deben ser considerados como asesoramiento financiero o legal</h4>
+    
+    <div id="result-table"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+

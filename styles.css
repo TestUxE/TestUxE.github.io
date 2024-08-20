@@ -1,0 +1,174 @@
+/* Styles for two-column layout */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+    min-width: calc(50% - 15px); /* Adjusting for the gap */
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    /* Stack inputs on smaller screens */
+    .form-group {
+        min-width: 100%;
+    }
+}
+
+/* Ensure the button remains centered and the same width as the input fields */
+button {
+    width: calc(50% - 15px);
+    margin: 10px auto;
+    display: block;
+    padding: 10px;
+    background-color: #5A6675;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: not-allowed;
+}
+
+button:enabled {
+    background-color: #DAAA00;
+    cursor: pointer;
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+    font-size: 0.875em;
+    background: linear-gradient(90deg, #0093C5, #E87928);
+
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto ;
+    max-width: 120px; /* Ajusta el tamaño del logo según sea necesario */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5A6675
+}
+
+h4 {
+    text-align: center;
+    color: white;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.highlighted-cell {
+    background-color: #5A6675; /* Purple background */
+    color: white; /* White text */
+    border: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+.highlighted-cell-2 {
+    background-color: #0093C5; /* Purple background */
+    color: white; /* White text */
+    font-weight: bold;
+    text-align: right;
+}
+
+.lateral-cell {
+    background-color: #6283a3; /* Purple background */
+    color: white; /* White text */
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+
+
+#result-container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 10px;
+    
+    width: 33.333%;
+}
+
+th {
+    background-color: #5A6675; /* Strong blue background */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+td {
+    background-color: white;
+    border: 1px solid #5A6675;
+    text-align: right;
+}
+
+th:first-of-type {
+    border-top-left-radius: 10px;
+  }
+  th:last-of-type {
+    border-top-right-radius: 10px;
+  }
+  tr:last-of-type td:first-of-type {
+    border-bottom-left-radius: 10px;
+  }
+  tr:last-of-type td:last-of-type {
+    border-bottom-right-radius: 10px;
+  }
+
+
+
+
